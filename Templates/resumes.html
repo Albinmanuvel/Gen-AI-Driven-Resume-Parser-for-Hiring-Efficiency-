@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Uploaded Resumes</title>
+    <style>
+        body{
+            background-color: blanchedalmond; color: brown;
+
+        }
+        h4{color: black;}
+    </style>
+</head>
+<body>
+    <h1 style="text-align: center" >Uploaded Resumes</h1>
+    <hr>
+    <br>
+    <br>
+
+    {% if resumes %}
+    <div style="text-align: center" >
+        <table>
+            <tr>
+                <th>Name</th>
+                <th>Phone</th>
+                <th>Email</th>
+                <th>Extracted Text</th>
+                <th>Actions</th>
+               
+            </tr>
+            {% for resume in resumes %}
+                <tr>
+                    <td>{{ resume.name }}</td>
+                    <td>{{ resume.phone }}</td>
+                    
+                    <td>{{ resume.email }}</td>
+                    <td>
+                        <a href="{{ url_for('extracts', resume_id=resume.id) }}">View extracted texts </a>
+                    </td>
+                    <td>
+                        <a href="{{ url_for('view_resume', resume_id=resume.id) }}">View parsed resume </a>
+                    </td>
+                </tr>
+            {% endfor %}
+        </table>
+    </div>
+    {% else %}
+        <p>No resumes uploaded yet.</p>
+    {% endif %}
+
+    <br>
+
+    <div >
+        <a href="{{ url_for('index' ) }}">
+           <button > Home </button> 
+        </a>
+        </div>
+
+    </a>
+</body>
+</html>

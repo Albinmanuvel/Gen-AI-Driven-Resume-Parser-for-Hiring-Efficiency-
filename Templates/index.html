@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <title>Resume Parser</title>
+    <style>
+        body{
+            background-color: blanchedalmond; color: brown;
+
+        }
+        h4{color: black;}
+    </style>
+</head>
+<body>
+    <h1 class="heading" style="text-align: center">Resume Parser</h1>
+    <hr>
+    <br>
+    <br>
+    
+   
+    <h2 style="text-align: center"> Upload Resume</h2>
+    <form style="text-align: center" action="{{ url_for('index') }}" method="post" enctype="multipart/form-data" title="submit only .pdf file">
+        <input style="text-align: center" type="file" name="resume" required>
+        submit only .pdf files 
+        <input style="text-align: center" type="submit" value="Upload">  
+        
+    </form>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div style="text-align: center" >
+    <h2 > View Uploaded Resumes</h2>
+    <a  href="{{ url_for('resumes') }}" style="text-align: center" > 
+        <button > view resume  </button> 
+    </a>
+</div>
+</body>
+</html>

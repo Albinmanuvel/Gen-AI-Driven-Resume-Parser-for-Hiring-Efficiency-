@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .button-space {
+            margin-right: 20px;
+            
+        }
+        body{
+            background-color: blanchedalmond; color: brown;
+
+        }
+        h1{color: black;}
+    </style>
+</head>
+<body>
+    
+    <p>{{ resume.extracted_text }}</p>
+
+    <a href="{{ url_for('resumes') }}"  class="button-space" > <button > Back to Resumes </button> 
+
+    </a>
+
+    <a  href="{{ url_for('index') }}" style="text-align: center" > 
+        <button > Home  </button> 
+    </a>
+
+</body>
+</html>
