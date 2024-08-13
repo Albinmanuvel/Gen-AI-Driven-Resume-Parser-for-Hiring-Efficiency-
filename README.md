@@ -23,7 +23,7 @@ This is a Flask-based web application that allows users to upload resumes in PDF
 
 On Windows use - python -m venv newEnv
 
-then : newEnv\scripts\activate 
+ newEnv\scripts\activate 
 
 
 # Install Dependencies:
