@@ -20,13 +20,11 @@ This is a Flask-based web application that allows users to upload resumes in PDF
 - OpenAI Python client
 
 # Create and Activate a Virtual Environment:
-on Linux  use - 
-python -m venv venv
 
-source venv/bin/activate  
+On Windows use - python -m venv newEnv
 
-On Windows use - 
-`venv\Scripts\activate`
+then : newEnv\scripts\activate 
+
 
 # Install Dependencies:
 
