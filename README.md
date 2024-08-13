@@ -21,10 +21,10 @@ This is a Flask-based web application that allows users to upload resumes in PDF
 
 # Create and Activate a Virtual Environment:
 
-python -m venv venv
-source venv/bin/activate  
+On Windows use - python -m venv newEnv
 
-On Windows use `venv\Scripts\activate`
+ newEnv\scripts\activate 
+
 
 # Install Dependencies:
 
